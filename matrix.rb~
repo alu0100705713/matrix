@@ -16,10 +16,26 @@ def suma(a,b,c)
     end
   end
 
-print "La matriz SUMA es: #{c}  
+print "La matriz SUMA es: #{c}"
+
 end
 
 puts "La matriz A es: #{a}"
 puts "La matriz B es: #{b}"
-puts "La matriz SUMA es: #{suma(a,b,c)}"
+puts suma(a,b,c)
 
+def mul(a,b,c)
+ 
+  for k in (0...3)
+    for i in (0...3)
+      for j in (0...3)
+	c[k][i] += a[k][j]*b[j][i]   
+	end
+      end
+    end
+    print "La matriz PRODUCTO es: #{c}"
+
+end
+
+puts mul(a,b,c)
+	                         
